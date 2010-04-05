@@ -1,0 +1,12 @@
+#!/usr/bin/env perl
+use strict;
+BEGIN {
+    if (-d '.git') {
+        require blib;
+        blib->import;
+    }
+}
+use lib "lib";
+use App::Lyra::Click;
+
+App::Lyra::Click->new_with_options()->run();
