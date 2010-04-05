@@ -2,6 +2,7 @@ package Lyra::Server::Click;
 use Moose;
 use AnyEvent;
 use Lyra::Extlib;
+use Lyra::Util qw(NOOP);
 use URI;
 use namespace::autoclean;
 
@@ -65,37 +66,18 @@ sub process {
     $self->load_ad( $ad_id, $cv );
 }
 
-sub _load_ad_from_memd_cb {
-    my ($self, $final_cv, $ad_id, $ad) = @_;
-
-    if ($ad) {
-        $final_cv->send( 302, [ Location => $ad->[0] ] );
-    } else {
-        $self->load_ad_from_db( $final_cv, $ad_id );
-    }
-}
-
-sub _load_ad_from_db_cb {
-    my ($self, $final_cv, $ad_id, $rows) = @_;
-    if (! defined $rows) {
-        confess "PANIC: loading from DB returned undef";
-    }
-
-    if (@$rows > 0) {
-        $self->cache->set( $ad_id, $rows->[0], \&Lyra::_NOOP );
-
-        $final_cv->send( 302, [ Location => $rows->[0]->[0] ] );
-    } else {
-        $final_cv->send( 404 );
-    }
-}
-
-# Ad retrieval. Try memcached, if you failed, load from DB
-*load_ad = \&load_ad_from_memd;
-
-sub load_ad_from_memd {
+sub load_ad {
     my ($self, $ad_id, $final_cv) = @_;
-    $self->cache->get( $ad_id, sub { _load_ad_from_memd_cb( $self, $final_cv, $ad_id, @_ ) } );
+
+    # try memcached first
+    $self->cache->get( $ad_id, sub { 
+        my $ad = shift;
+        if ($ad) {
+            $final_cv->send( 302, [ Location => $ad->[0] ] );
+        } else {
+            $self->load_ad_from_db( $final_cv, $ad_id );
+        }
+    } );
 }
 
 sub load_ad_from_db {
@@ -104,7 +86,19 @@ sub load_ad_from_db {
     $self->execsql(
         "SELECT landing_uri FROM lyra_ads_master WHERE id = ?",
         $ad_id,
-        sub { _load_ad_from_db_cb( $self, $final_cv, $ad_id, $_[1] ) }
+        sub {
+            my $rows = $_[1];
+            if (! defined $rows) {
+                confess "PANIC: loading from DB returned undef";
+            }
+
+            if (@$rows > 0) {
+                $self->cache->set( $ad_id, $rows->[0], \&NOOP );
+                $final_cv->send( 302, [ Location => $rows->[0]->[0] ] );
+            } else {
+                $final_cv->send( 404 );
+            }
+        }
     );
 }
 
