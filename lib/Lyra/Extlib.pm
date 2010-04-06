@@ -43,8 +43,10 @@ sub extlib (&;$) {
 }
 
 sub submodule (@) {
-    unshift @INC,
-        map { File::Spec->catdir( $BASE, 'modules', $_, 'lib' ) } @_;
+    require blib;
+    foreach my $dir (@_) {
+        blib->import( File::Spec->catdir( $BASE, 'modules', $dir ) );
+    }
 }
 
 sub locallib (@) {
