@@ -39,3 +39,10 @@ Twiggy: Accepting connections at http://127.0.0.1:10002/
 127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
 127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
 127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+127.0.0.1 - - [07/ 4/2010 12:09:41] "GET /?ad=test_ads_by_area001 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:09:41] "GET /?ad=test_ads_by_area002 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:09:41] "GET /?ad=test_ads_by_area003 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:09:41] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:09:41] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:09:41] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
