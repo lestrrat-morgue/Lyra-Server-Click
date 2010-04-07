@@ -1,5 +1,4 @@
 package App::Lyra::Click;
-use lib "../Lyra-Core/lib";
 use Moose;
 use AnyEvent;
 use Lyra::Server::Click;
