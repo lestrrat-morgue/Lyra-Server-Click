@@ -27,6 +27,7 @@ if (-f 'Makefile') {
     seek $fh, 0, 0;
 
     $content =~ s/pure_all :: config pm_to_blib subdirs linkext/pure_all :: config pm_to_blib subdirs linkext gitmodules/;
+    $content =~ s/"-e" "(test_harness\(\$\(TEST_VERBOSE\), )/"-I\$(INST_LIB)" "-I\$(INST_ARCHLIB)" "-Mlocal::lib=extlib" "-Imodules\/core\/lib" "-MLyra::Test=start_daemons" "-e" "my \\\$\$guard = start_daemons; $1't\/lib', /;
     
     print $fh $content;
     close $fh;

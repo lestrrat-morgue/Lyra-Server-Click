@@ -1,0 +1,41 @@
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+failed to connect to 127.0.0.1:11211 at /Users/daisuke/perl5/lib/perl5/Cache/Memcached/AnyEvent.pm line 111, <> line 6.
+Failed to connect to any memcached servers at /Users/daisuke/perl5/lib/perl5/Cache/Memcached/AnyEvent.pm line 169, <> line 6.
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+failed to connect to 127.0.0.1:11211 at /Users/daisuke/perl5/lib/perl5/Cache/Memcached/AnyEvent.pm line 111, <> line 6.
+Failed to connect to any memcached servers at /Users/daisuke/perl5/lib/perl5/Cache/Memcached/AnyEvent.pm line 169, <> line 6.
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+127.0.0.1 - - [07/ 4/2010 12:04:52] "GET /?ad=test_ads_by_area001 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:04:52] "GET /?ad=test_ads_by_area002 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:04:52] "GET /?ad=test_ads_by_area003 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:04:52] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:04:52] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:04:52] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+127.0.0.1 - - [07/ 4/2010 12:05:52] "GET /?ad=test_ads_by_area001 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:05:52] "GET /?ad=test_ads_by_area002 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:05:52] "GET /?ad=test_ads_by_area003 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:05:52] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:05:52] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:05:52] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+127.0.0.1 - - [07/ 4/2010 12:08:01] "GET /?ad=test_ads_by_area001 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:01] "GET /?ad=test_ads_by_area002 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:01] "GET /?ad=test_ads_by_area003 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:01] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:01] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:01] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+127.0.0.1 - - [07/ 4/2010 12:08:25] "GET /?ad=test_ads_by_area001 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:25] "GET /?ad=test_ads_by_area002 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:25] "GET /?ad=test_ads_by_area003 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:25] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:25] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:25] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+Twiggy: Accepting connections at http://127.0.0.1:10002/
+127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area001 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area002 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area003 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area004 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area005 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
+127.0.0.1 - - [07/ 4/2010 12:08:48] "GET /?ad=test_ads_by_area006 HTTP/1.1" 302 - "-" "libwww-perl/5.834"
